@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Root from "./Root";
 import Home from "./components/Home";
+import NewCharContainer from "./components/NewCharContainer";
 import { createBrowserRouter, RouterProvider, Navigate, defer } from "react-router-dom";
 
 const Router = () => {
@@ -18,6 +19,10 @@ const Router = () => {
         {
           path: 'home', 
           element: <Home />
+        },
+        {
+          path: 'new-char', 
+          element: <NewCharContainer/>
         }
       ]
     }
